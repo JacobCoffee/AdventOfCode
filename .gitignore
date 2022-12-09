@@ -70,7 +70,7 @@ celerybeat.pid
 *.sage.py
 .env
 env/
-2022/venv/
+2022/Python/venv
 ENV/
 env.bak/
 venv.bak/
