@@ -1,6 +1,6 @@
 #!/bin/python3
 
-with open("../../1.data/input.data") as f:
+with open("../../Day_1/input.data") as f:
     elf = f.read().split("\n\n")
     elf_calorie_comparator = []
 
