@@ -1,6 +1,6 @@
 #!/bin/python3
 
-choice_map = {'A': 'Rock', 'B': 'Paper', 'C': 'Scissors', 'X': 'Lose', 'Y': 'Draw', 'Z': 'Win'}
+choice_map = {"A": "Rock", "B": "Paper", "C": "Scissors", "X": "Lose", "Y": "Draw", "Z": "Win"}
 choice_points = {"Rock": 1, "Paper": 2, "Scissors": 3}
 round_points = {"Win": 6, "Lose": 0, "Draw": 3}
 my_points = []
