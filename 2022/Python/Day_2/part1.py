@@ -3,7 +3,6 @@
 choice_map = {"A": "Rock", "B": "Paper", "C": "Scissors", "X": "Rock", "Y": "Paper", "Z": "Scissors"}
 choice_points = {"Rock": 1, "Paper": 2, "Scissors": 3}
 round_points = {"Win": 6, "Lose": 0, "Draw": 3}
-my_points = []
 
 
 def round_outcome(round_choice):
