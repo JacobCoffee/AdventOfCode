@@ -2,7 +2,7 @@
 
 
 ## Python
-- [] [Day one](Rust/Day_1/)
+- [x] [Day one](Rust/Day_1/)
 - [] [Day two](Rust/Day_2/)
 - [] [Day three](Rust/Day_3/)
 - [] [Day four](Rust/Day_4/)
