@@ -1,0 +1,14 @@
+[package]
+name = "advent-of-code-2023"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jacob Coffee <jacob@z7x.org>"]
+description = "Advent of Code 2023 - Oxidized"
+license = "MIT"
+repository = "https://github.com/JacobCoffee/adventofcode"
+readme = "../README.md"
+
+[dependencies]
+clap = { version = "4.4.10", features = ["derive"] }
+matches = { version = "0.1.10", features = [] }
+num = "0.4.1"
