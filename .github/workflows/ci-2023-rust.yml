@@ -37,6 +37,7 @@ jobs:
         uses: actions-rs/clippy-check@v1.0.7
         with:
           working-directory: 2023/Rust
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Format Check
         uses: actions-rust-lang/rustfmt@v1.1.0
