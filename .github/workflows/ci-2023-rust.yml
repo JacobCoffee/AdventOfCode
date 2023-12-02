@@ -28,18 +28,27 @@ jobs:
         run: cargo test --verbose
         working-directory: 2023/Rust
 
-  lint:
+  format:
+    name: "cargo fmt"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Clippy
-        uses: actions-rs/clippy-check@v1.0.7
-        with:
-          working-directory: 2023/Rust
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Install Rust toolchain"
+        run: rustup component add rustfmt
 
-      - name: Format Check
-        uses: actions-rust-lang/rustfmt@v1.1.0
-        with:
-          working-directory: 2023/Rust
+      - run: cargo fmt --all --check
+
+  clippy:
+    name: "cargo clippy"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Install Rust toolchain"
+        run: |
+          rustup component add clippy
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: "Clippy"
+        run: cargo clippy
