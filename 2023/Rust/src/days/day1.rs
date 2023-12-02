@@ -1,4 +1,4 @@
-use crate::problem::Puzzle;
+use crate::puzzle::Puzzle;
 use std::collections::HashMap;
 
 pub struct DayOne;
