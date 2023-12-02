@@ -1,4 +1,4 @@
-name: Rust
+name: Rust 2023
 
 on:
   push:
@@ -17,6 +17,7 @@ jobs:
 
       - name: Build
         run: cargo build --verbose
+        working-directory: 2023/Rust
 
   test:
     runs-on: ubuntu-latest
@@ -25,13 +26,19 @@ jobs:
 
       - name: Run tests
         run: cargo test --verbose
+        working-directory: 2023/Rust
 
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Clippy
         uses: actions-rs/clippy-check@v1.0.7
+        with:
+          working-directory: 2023/Rust
 
       - name: Format Check
         uses: actions-rust-lang/rustfmt@v1.1.0
+        with:
+          working-directory: 2023/Rust
