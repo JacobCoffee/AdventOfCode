@@ -38,6 +38,7 @@ jobs:
         run: rustup component add rustfmt
 
       - run: cargo fmt --all --check
+        working-directory: 2023/Rust
 
   clippy:
     name: "cargo clippy"
@@ -52,3 +53,4 @@ jobs:
 
       - name: "Clippy"
         run: cargo clippy
+        working-directory: 2023/Rust
