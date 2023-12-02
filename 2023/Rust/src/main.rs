@@ -1,5 +1,5 @@
-use advent_of_code_2023::{run_day};
-use advent_of_code_2023::{Cli};
+use advent_of_code_2023::run_day;
+use advent_of_code_2023::Cli;
 use clap::Parser;
 
 fn main() {
